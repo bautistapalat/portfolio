@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Personal portfolio</title>
+</head>
+<body>
+    <div class="hero">
+        <div id="switch">
+                <input class="checkbox" type="checkbox"><i class="fa-solid fa-moon" style="font-size: 30px;"></i></input>
+        </div>
+        <!------------navbar starts------------->
+        <div class="container_navbar">
+            
+            <div class="logo">
+                <span id="jbp">BP</span>
+                <span id="coding">CODING</span>
+            </div>
+            <!--navbar logo ends-->
+            <nav>
+                <ul>
+                    <i class="fa-solid fa-house" id="home" ><a href> Home</a></i><br>
+                    <i class="fa-solid fa-user" id="aboutme"><a href=""> About me</a></i><br>
+                    <i class="fa-solid fa-graduation-cap" id="experience"><a href="">Preparation</a></i><br>
+                    <i class="fa-solid fa-laptop-code" id="skills"><a href="">Skills</a></i><br>
+                    <i class="fa-solid fa-handshake-angle" id="services"><a href="">Services</a></i><br>
+                    <i class="fa-brands fa-github" id="portfolio" style="color: var(--text-color);"><a href=""> Projects</a></i><br>
+                    <i class="fa-regular fa-paper-plane" id="contactme"><a href=""> Contact</a></i>
+                </ul>
+            </nav>
+        </div>
+        <!-------------navbar ends-------------->
+        <!------bars (responsive menu button) starts----->
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+        <!-----bars (responsive menu button) ends-------->
+        <!-------------------------contact form starts------------------------->
+        <div class="blurbackground"></div>
+        <div id="sidebar" class="">
+            <i id="btncloseform" class="lni lni-cross-circle" style="cursor:pointer; font-size: 25px; position:absolute;"></i>
+            <form id="form" class="form-register" action="https://formspree.io/f/mjvlpllj" method="post">
+                <h4 style="color: var(--text-color);">Send me an email</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Enter your name">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Enter your surname">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Enter your email">
+                <textarea class=".controls" id="mensaje" placeholder="Enter your message" required maxlength="200" cols="" rows=""style="max-width:100%; max-height: 100%;"></textarea>
+                <div class="buttonscontainer">
+                    <input class="botons" type="submit" value="Send">
+                    <button class="botonclose" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+        <!--------------------------contact form ends-------------------------->
+        <!---------------------------home page starts-------------------------->
+        <div id="HOME_CONTAINER">
+            <div class="text-container">
+                  <h1>HI! Welcome<br> to my personal portfolio</h1><br>
+                  <p style="color:var(--text-color);">Im <span style="font-weight:bold; color: #6f2e7c;">Juan Bautista Palat</span>, Jr software developer from Argentina.<br>I hope you like my work!</p>
+                  <a id="portfolio1" style="color: white; cursor: pointer;">Check my projects</a>           
+            </div>
+        </div>
+        <!---------------------------home page ends--------------------------->
+        <!------------------------about me page starts------------------------>
+        <div id="PAGE_CONTAINER" class="">
+            <div class="box_titulo">
+                <h3>My profile</h3>
+                <h2>About me</h2>
+            </div>
+            <div class="containercv">
+                <h2>Im <span style="color:#833d91;">Bautista Palat</span> and a .NET developer</h2>
+                <p> I´m a .NET junior software developer from Buenos Aires, Argentina. I study Software Engeneering in the National Techonlogic University of Buenos Aires, Argentina. Im 19 years old. I love coding and im able to work in a team/group or solo.</p>
+                <div class="img_container">
+                    <img src="../Media/perfil.jpg">
+                 </div>
+                 <div class="container">
+                   <div class="info">
+                    <span>Birthday: <span style="border-bottom:0px ;">September 23, 2002</span></span>
+                  </div>
+                  <div class="info">
+                    <span>Location: <span style="border-bottom:0px ;">Buenos Aires, Argentina</span></span>
+                  </div>
+                  <div class="info">
+                    <span>Studies: <span style="border-bottom:0px ;">Systems Engeniering</span></span>
+                  </div>
+                  <div class="info">
+                    <span>Curretly working at: <span style="border-bottom:0px ;">Qservices</span></span>
+                  </div>
+                  <div class="info">
+                    <span>Email: <span style="border-bottom:0px ;">Contact form</span></span>
+                  </div>
+                  <div class="info">
+                    <span>Age: <span style="border-bottom:0px ;">19</span></span>
+                  </div>
+                  <div class="info">
+                    <span>Specialization: <span style="border-bottom:0px ;">.NET</span></span>
+                  </div>
+                  <div class="info">
+                   <span>Experience: <span style="border-bottom:0px ;">Tech company</span></span>
+                  </div>
+                </div>
+              <div class="container_btns">
+                <a href="../Media/CV-Bautista Palat.pdf" download id="btnDownload">Download my CV</a>
+                <a href="" id="btnHire">Hire me</a>
+              </div>
+            </div>
+        </div>
+        <!------------------about me page ends------------------->
+        <!-----------------preparation page starts------------------->
+        <div id="PAGE_CONTAINER">
+            <div class="box_titulo">
+                <h3>My preparation</h3>
+                <h2>Studies & Experience</h2>
+            </div>
+            <div class="container_boxexp">
+                <div class="education_box">
+                    <a class="fecha">2016-2020</a>
+                    <h3>Bachellor in Economics & Managment</h3>
+                    <p>In 2020, i completed my studies at Nuestra Señora del Sagrado Corazon. Bachellor degree in Economics and Managment with a total average of 8.57</p>
+                </div>
+                <div class="education_box">
+                    <a class="fecha">2020-2021</a>
+                    <h3>Freelance Web development</h3>
+                    <p>As a way to earn money while i study, i work as a particulary web developer. I do have experience on working on pages for many clients around the world.</p>
+                </div>
+                <div class="education_box">
+                    <a class="fecha">2021-present</a>
+                    <h3>Software Engeneering UTN.BA</h3>
+                    <p>In 2021 i started studying the carreer of Software Engeneering in the UTN (Nacional Techonlogic University from Buenos Aires). Currently im in the 2nd year.</p>
+                </div>
+                <div class="experience_box">
+                    <a class="fecha">2022-present</a>
+                    <h3>Back-End Development</h3>
+                    <p>in 2022 i joined Qservices consulting and development, a tech company, where im working as a .NET back-end Software developer. I code on C# and JavaScript.</p>
+                </div>
+                <div class="experience_box">
+                    <a class="fecha">2009-2020</a>
+                    <h3>English lvl C2, Angloschool</h3>
+                    <p>I studied english at Angloschool, Buenos Aires, Argentina for 11 years. I reached an english lvl of C2 and passed the first certificate exam.</p>
+                </div>
+                <div class="experience_box">
+                    <a class="fecha">2019-2021</a>
+                    <h3>Online translator</h3>
+                    <p>I have experience on translating from english to spanish and viceversa. I used to teach english to people from Argentina as well.</p>
+                </div>
+            </div>
+        </div>
+        <!-----------------preparation page ends------------------->
+        <div id="PAGE_CONTAINER">
+            <div class="box_titulo">
+                <h3>Coding Skills</h3>
+                <h2>Skills</h2>
+            </div>
+                <div class="container_box2">
+                    <div class="box2">
+                        <i><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></i>
+                        <h5>JavaScript</h5>
+                        <h4>JavaScript</h4>
+                    </a>
+                    </div>
+                    <div class="box2">
+                        <i><img src="https://iconape.com/wp-content/png_logo_vector/c-sharp-c-logo.png"></i>
+                        <h5>C# .NET</h5>
+                        <h4>C# .NET</h4>
+                    </div>
+                    <div class="box2">
+                        <i><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png"></i>
+                        <h5>HTML5 & CSS</h5>
+                        <h4>HTML5 & CSS</h4>
+                    </div>
+                    <div class="box2">
+                        <i><img src="https://consultoriadata.com/wp-content/uploads/2019/09/microsoft-sql-server-logo.png"></i> 
+                        <h5>SQL SERVER Database</h5>
+                        <h4>SQL SERVER Database</h4>
+                    </div>
+                    <div class="box2">
+                        <i><img src="https://www.fixedbuffer.com/wp-content/uploads/2018/09/EFCore.png"></i>
+                        <h5>Entity-Framework</h5>
+                        <h4>Entity-Framework</h4>
+                    </div>
+                    <div class="box2">
+                        <i><img src="http://www.ispirer.net/images/asp.net.logo.png"></i>
+                        <h5>ASP.NET</h5>
+                        <h4>ASP.NET</h4>
+                    </div>
+                    <div class="box2">
+                        <i><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"></i>
+                        <h5>C++</h5>
+                        <h4>C++</h4>
+                    </div>
+                    <div class="box2">
+                        <i><img src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"></i>
+                        <h5>JAVA</h5>
+                        <h4>JAVA</h4>
+                    </div>
+                </div>
+        </div>
+        <!----------------------services page starts--------------------->
+        <div id="PAGE_CONTAINER">
+            <div class="box_titulo"><br>
+                <h3>My services</h3>
+                <h2>What i offer</h2>
+            </div>
+            <div class="container_box3">
+                <div class="box3">
+                    <i class="lni lni-code-alt"></i>
+                    <h5>Web development</h5>
+                    <p>Let me get you a  beautiful web page design like this one! Portfolios /Company web site /OnlineShop</p>
+                    <a id="btnHireService">Hire me</a>
+                </div>
+                <div class="box3">
+                    <i class="fa-solid fa-code"></i>
+                    <h5>Back-End development</h5>
+                    <p>Hire me for back end development on<br> Js C# or C++. Entity-Framework, ASP.NET</p>
+                    <a id="btnHireService">Hire me</a>
+                </div>
+                <div class="box3">
+                    <i class="lni lni-database"></i>
+                    <h5>Databa Base analyst</h5>
+                    <p>Hire me for coding on sql database. Database maintance, modeling, reports, queries</p>
+                    <a id="btnHireService">Hire me</a>
+                </div>
+            </div>
+        </div>
+        <!----------------------services page ends----------------------->
+        <!---------------------portfolio page starts--------------------->
+        <div id="PAGE_CONTAINER">
+            <div class="box_titulo"><br>
+                <h3>My projects</h3>
+                <h2>Check my work</h2>
+            </div>
+            <div class="box_projects_container">
+                <div class="project_box active" href="" id="Projecto1">
+                    <img src="../Media/weatherpagethumbnail.png">
+                    <a href="https://bautistapalat.github.io/weatherwebsite/weather%20website/html/weatherwebsite.html">Weather Website</a> 
+                </div>
+                <div class="project_box active" href="" id="Projecto1">
+                    <img src="../Media/portfoliothumbnail.png">
+                    <a href="https://github.com/bautistapalat/portfolio">Portfolio on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <!---------------------portfolio page ends--------------------->
+        
+<script src="../javascript/script.js"></script>
+<script>
+    //script to send an email by the contact form
+const $form = document.querySelector("#form")
+ 
+ $form.addEventListener('submit', handleSubmit)
+        
+ async function handleSubmit (event) {
+ event.preventDefault()
+ const form = new FormData(this)
+ const response = await fetch(this.action, {
+ method: this.method,
+ body: form,
+ headers: {
+ 'Accept': 'application/json'
+ }
+ })
+ if (response.ok) {
+ this.reset ()
+ alert('Thank you for contacting me, i´ll be replaying soon!') //email sent succesfully
+ }
+ }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d4fc36a565.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
